@@ -8,12 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MainConfig {
 
-    @Bean
     public static Lists getList() {
         return new Lists();
     }
 
-    @Bean
     public static CommandParser getParser() {
         return new CommandParser();
     }

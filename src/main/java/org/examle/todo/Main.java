@@ -13,8 +13,7 @@ import static org.examle.todo.MainConfig.getParser;
 @SpringBootApplication
 public class Main implements CommandLineRunner {
 
-	@Autowired
-	public static Scanner scanner;
+	public static Scanner scanner = new Scanner(System.in);;
 
 	public static void main(String[] args) {
 		SpringApplication.run(Main.class, args);
